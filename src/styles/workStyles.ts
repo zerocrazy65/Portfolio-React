@@ -4,7 +4,6 @@ import { COLORS, FONTS, FONT_SIZE } from "./themes";
 export const InsideIsland = styled.div`
    display: flex;
    flex-direction: column;
-   justify-content: between;
    gap: 3rem;
    padding: 3rem;
    @media (max-width: 720px) {
@@ -110,6 +109,7 @@ export const IslandText = styled.div`
 export const IslandTools = styled.div`
    display: flex;
    gap: 5rem;
+   justify-content: space-around;
    background-color: ${COLORS.WHITE};
    box-shadow: 2px 3px 42px rgba(0, 0, 0, 0.15);
    border-radius: 1rem;
@@ -126,6 +126,10 @@ export const IslandTools = styled.div`
    }
 
    @media (max-width: 520px) {
+      gap: 3rem;
       border-radius: 1rem;
+   }
+   @media (max-width: 1000px) {
+      justify-content: start;
    }
 `;

@@ -59,6 +59,11 @@ export const GlobalStyle = createGlobalStyle`
         margin-top: 2rem;
         color: ${COLORS.BLACK}
     }
+    @media (max-width: 420px) {
+        li {
+            letter-spacing:0px;
+        }
+    }
 
     ${HomeStyle}
 `;

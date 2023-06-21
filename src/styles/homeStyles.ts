@@ -32,6 +32,10 @@ export const LayoutBlueContent = styled(LayoutContent)`
    @media (max-width: 720px) {
       height: 45rem;
    }
+
+   @media (max-width: 560px) {
+      height: 40rem;
+   }
 `;
 
 export const Info = styled.div`
@@ -242,6 +246,11 @@ export const ProjectTitle = styled(Name)`
 
 export const ProjectDescription = styled(SubBody)`
    color: ${COLORS.WHITE};
+
+   padding: 0 5rem 0 0;
+   @media (max-width: 720px) {
+      padding: 0;
+   }
 `;
 
 export const ProjectTag = styled.span`

@@ -14,6 +14,7 @@ import {
 import GalleryHover from "./GalleryHover";
 import InfoContent from "./InfoContent";
 import ProjectSlider from "./ProjectSlider";
+import { HorizonReveal, VerticalReveal } from "../../layout/ScrollReveal";
 const imgBoxes = document.querySelectorAll(".img-box");
 
 imgBoxes.forEach((box) => {
@@ -40,32 +41,44 @@ const HomePage = () => {
                <GalleryHover />
             </LayoutContent>
             <LayoutContent>
-               <Header>Work</Header>
+               <VerticalReveal transition={25}>
+                  <Header>Work</Header>
+               </VerticalReveal>
             </LayoutContent>
             <LayoutBlueContent>
                <div className="d-flex flex-column  justify-content-center ">
-                  <div className="d-flex flex-row gap-1">
-                     {currentProject.tag?.map((tag) => (
-                        <ProjectTag
-                           className={tag.toLowerCase().replace(/\s+/g, "-")}
-                           key={tag}
-                        >
-                           {tag}
-                        </ProjectTag>
-                     ))}
-                  </div>
-                  <ProjectTitle>{currentProject.title}</ProjectTitle>
-                  <ProjectTools className="d-flex flex-row align-items-center">
-                     <strong>Stack</strong>&nbsp;
-                     {currentProject.tools.join(", ")}
-                  </ProjectTools>
-                  <ProjectDescription>
-                     {currentProject.description}
-                  </ProjectDescription>
-                  <SubBody className="difficulty">
-                     <strong>Difficulty : </strong>&nbsp;
-                     {currentProject.difficulty}
-                  </SubBody>
+                  <VerticalReveal transition={25}>
+                     <div className="d-flex flex-row gap-1">
+                        {currentProject.tag?.map((tag) => (
+                           <ProjectTag
+                              className={tag.toLowerCase().replace(/\s+/g, "-")}
+                              key={tag}
+                           >
+                              {tag}
+                           </ProjectTag>
+                        ))}
+                     </div>
+                  </VerticalReveal>
+                  <HorizonReveal transition={30}>
+                     <ProjectTitle>{currentProject.title}</ProjectTitle>
+                  </HorizonReveal>
+                  <HorizonReveal transition={40}>
+                     <ProjectTools className="d-flex flex-row align-items-center">
+                        <strong>Stack</strong>&nbsp;
+                        {currentProject.tools.join(", ")}
+                     </ProjectTools>
+                  </HorizonReveal>
+                  <HorizonReveal transition={50}>
+                     <ProjectDescription>
+                        {currentProject.description}
+                     </ProjectDescription>
+                  </HorizonReveal>
+                  <VerticalReveal transition={60}>
+                     <SubBody className="difficulty mt-2">
+                        <strong>Difficulty : </strong>&nbsp;
+                        {currentProject.difficulty}
+                     </SubBody>
+                  </VerticalReveal>
                </div>
                <br />
                <ProjectSlider

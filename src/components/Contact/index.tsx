@@ -7,6 +7,7 @@ import { Call } from "@styled-icons/fluentui-system-regular/Call";
 import { FacebookCircle } from "@styled-icons/boxicons-logos/FacebookCircle";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { COLORS, FONTS, FONT_SIZE } from "../../styles/themes";
+import { HorizonReveal } from "../../layout/ScrollReveal";
 
 const ThemeIcon = css`
    color: ${COLORS.WHITE};
@@ -82,50 +83,70 @@ const Contact = () => {
             <InsideContact>
                <div className="d-flex flex-column gap-5">
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <IconCircle>
-                        <FacebookCircleIcon />
-                     </IconCircle>
-                     <ContactFont>
-                        <LinkTo href="https://www.facebook.com/katapat.supamatheekulawat">
-                           Katapat Supamatheekulawat
-                        </LinkTo>
-                     </ContactFont>
+                     <HorizonReveal transition={30}>
+                        <IconCircle>
+                           <FacebookCircleIcon />
+                        </IconCircle>
+                     </HorizonReveal>
+                     <HorizonReveal transition={30}>
+                        <ContactFont>
+                           <LinkTo href="https://www.facebook.com/katapat.supamatheekulawat">
+                              Katapat Supamatheekulawat
+                           </LinkTo>
+                        </ContactFont>
+                     </HorizonReveal>
                   </div>
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <IconCircle>
-                        <CallIcon />
-                     </IconCircle>
-                     <ContactFont>090-914-7644</ContactFont>
+                     <HorizonReveal transition={50}>
+                        <IconCircle>
+                           <CallIcon />
+                        </IconCircle>
+                     </HorizonReveal>
+                     <HorizonReveal transition={50}>
+                        <ContactFont>090-914-7644</ContactFont>
+                     </HorizonReveal>
                   </div>
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <IconCircle>
-                        <GithubIcon />
-                     </IconCircle>
-                     <ContactFont>
-                        <LinkTo href="https://github.com/zerocrazy65">
-                           Zerocrazy65
-                        </LinkTo>
-                     </ContactFont>
+                     <HorizonReveal transition={100}>
+                        <IconCircle>
+                           <GithubIcon />
+                        </IconCircle>
+                     </HorizonReveal>
+                     <HorizonReveal transition={150}>
+                        <ContactFont>
+                           <LinkTo href="https://github.com/zerocrazy65">
+                              Zerocrazy65
+                           </LinkTo>
+                        </ContactFont>
+                     </HorizonReveal>
                   </div>
                </div>
                <div className="d-flex flex-column gap-5">
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <IconCircle>
-                        <EmailIcon />
-                     </IconCircle>
-                     <ContactFont>
-                        <LinkTo href="mailto:katapat@gmail.com">
-                           katapat43@gmail.com
-                        </LinkTo>
-                     </ContactFont>
+                     <HorizonReveal transition={200}>
+                        <IconCircle>
+                           <EmailIcon />
+                        </IconCircle>
+                     </HorizonReveal>
+                     <HorizonReveal transition={250}>
+                        <ContactFont>
+                           <LinkTo href="mailto:katapat@gmail.com">
+                              katapat43@gmail.com
+                           </LinkTo>
+                        </ContactFont>
+                     </HorizonReveal>
                   </div>
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <IconCircle>
-                        <LocationIcon />
-                     </IconCircle>
-                     <ContactFont>
-                        Bangkadi Samae Dam, Bang Khun Thian, Bangkok
-                     </ContactFont>
+                     <HorizonReveal transition={300}>
+                        <IconCircle>
+                           <LocationIcon />
+                        </IconCircle>
+                     </HorizonReveal>
+                     <HorizonReveal transition={400}>
+                        <ContactFont>
+                           Bangkadi Samae Dam, Bang Khun Thian, Bangkok
+                        </ContactFont>
+                     </HorizonReveal>
                   </div>
                </div>
             </InsideContact>

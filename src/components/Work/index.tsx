@@ -11,6 +11,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { projects, project } from "../../data/projectAll";
 import { COLORS, FONTS } from "../../styles/themes";
+import { VerticalReveal, HorizonReveal } from "../../layout/ScrollReveal";
 
 const ImageSize = styled.div`
    width: clamp(8rem, 10vw, 10rem);
@@ -30,7 +31,7 @@ const IconStyle = styled.img`
 const IconButton = styled.div`
    display: flex;
    align-items: center;
-   width: 50%;
+   width: 100%;
    flex-direction: column;
    align-items: center;
    &:hover {
@@ -84,33 +85,41 @@ const MyWork = () => {
          <InsideIsland>
             <IslandContent>
                <div className="d-flex flex-column align-items-start">
-                  {storeData.map((item, index) => (
-                     <ContentLayout key={index}>
-                        <ImageSize>
-                           <IconStyle src={item.image} alt="" />
-                        </ImageSize>
-                        <IslandTextArea>
-                           <IslandText>
-                              <span>{item.description}</span>
-                           </IslandText>
-                        </IslandTextArea>
-                     </ContentLayout>
+                  {storeData.map((item, idx) => (
+                     <VerticalReveal transition={30 * idx}>
+                        <ContentLayout key={idx}>
+                           <ImageSize>
+                              <IconStyle src={item.image} alt="" />
+                           </ImageSize>
+
+                           <IslandTextArea>
+                              <IslandText>
+                                 <span>{item.description}</span>
+                              </IslandText>
+                           </IslandTextArea>
+                        </ContentLayout>
+                     </VerticalReveal>
                   ))}
                </div>
             </IslandContent>
             <IslandTools>
                {uniqueStacksArray.map((stack, idx) => (
-                  <IconButton
-                     onClick={() => handleSlideChange(stack)}
-                     key={idx}
-                  >
-                     <IconSize>
-                        <IconStyle src={uniqueIconStacksArray[idx]} alt="img" />
-                     </IconSize>
-                     <IconText>
-                        <span>{stack}</span>
-                     </IconText>
-                  </IconButton>
+                  <HorizonReveal transition={10 * idx}>
+                     <IconButton
+                        onClick={() => handleSlideChange(stack)}
+                        key={idx}
+                     >
+                        <IconSize>
+                           <IconStyle
+                              src={uniqueIconStacksArray[idx]}
+                              alt="img"
+                           />
+                        </IconSize>
+                        <IconText>
+                           <span>{stack}</span>
+                        </IconText>
+                     </IconButton>
+                  </HorizonReveal>
                ))}
             </IslandTools>
          </InsideIsland>

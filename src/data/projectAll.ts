@@ -24,7 +24,7 @@ export const projects: project[] = [
       title: "Groword",
       stack: "Vue.js",
       description:
-         "This is a web application game created using web development languages. It is a basic English practice game designed for kids aged 5 to 13. This game helps children learn spelling and remember vocabulary from various categories.",
+         "This is a web applidevelopment languages. It is a basic English practice game designed for kids aged 5 to 13. This game helps children learn spelling and remember vocabulary from various categories.",
       difficulty: "Moderate",
       icon: vueIcon,
       image: TestImage,
@@ -34,7 +34,7 @@ export const projects: project[] = [
       title: "Magcha",
       stack: "React",
       description:
-         "This is an E-Commerce web which allows trading merchandise related to mechanical keyboard",
+         "This is an E-Commerce web whirelated to mechanical keyboard",
       difficulty: "Basic",
       icon: reactIcon,
       image: TestImage,
@@ -44,27 +44,27 @@ export const projects: project[] = [
       title: "Plantplay",
       stack: "Flutter",
       description:
-         "This is an E-Commerce application created using Flutter. Which allows trading merchandise related to indoor plants ",
+         "This is an E-Commerce applicatallows trading merchandise related to indoor plants ",
       difficulty: "Moderate",
       icon: flutterIcon,
-      image: TestImage,
+      image: TestImag2,
    },
    {
       tag: ["Study Project", "Fullstack"],
       title: "Plantplay",
       stack: "Flutter",
       description:
-         "This is an E-Commerce application created using Flutter. Which allows trading merchandise related to indoor plants ",
+         "This is an E-Cusing Flutter. Which allows trading merchandise related to indoor plants ",
       difficulty: "Moderate",
       icon: flutterIcon,
-      image: TestImag2,
+      image: TestImage,
    },
    {
       tag: ["Senior Project", "Fullstack"],
       title: "Shooting Practice Kit IoT",
       stack: "Flutter",
       description:
-         "This project is an IoT-based shooting practice kit that prioritizes safety by using laser bullets instead of real bullets. It integrates with IoT technology to send real-time data to a mobile application, allowing users to view live score and analyze their performance.",
+         "This project is an IoT-based sritizes safety by using laser bullets instead of real bullets. It integrates with IoT technology to send real-time data to a mobile application, allowing users to view live score and analyze their performance.",
       difficulty: "Advance",
       icon: flutterIcon,
       image: TestImag2,
@@ -74,7 +74,7 @@ export const projects: project[] = [
       title: "OPDC Data retriever",
       stack: "Flask",
       description:
-         "This project is a website design to handle data, monitoring information and generate download links for data files stored in the database.  ",
+         "This project is a monitoring information and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       icon: flaskIcon,
       image: TestImage,
@@ -84,7 +84,7 @@ export const projects: project[] = [
       title: "OPDC Data retriever",
       stack: "P5.js",
       description:
-         "This project is a website design to handle data, monitoring information and generate download links for data files stored in the database.  ",
+         "This project is a webring information and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       icon: p5Icon,
       image: TestImage,
@@ -94,7 +94,7 @@ export const projects: project[] = [
       title: "OPDC Data retriever",
       stack: "frontend",
       description:
-         "This project is a website design to handle data, monitoring information and generate download links for data files stored in the database.  ",
+         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       icon: frontendIcon,
       image: TestImage,
