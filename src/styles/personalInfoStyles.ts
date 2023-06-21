@@ -33,7 +33,7 @@ export const ProgressLayout = styled(InfoLayout)`
    justify-content: space-between;
 `;
 
-export const HobbyLayout = styled(InfoLayout)`
+export const StackLayout = styled(InfoLayout)`
    justify-content: space-around;
 `;
 
