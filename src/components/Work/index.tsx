@@ -1,7 +1,6 @@
 import IslandBG from "../../layout/IslandBG";
 import {
    ContentLayout,
-   IconText,
    InsideIsland,
    IslandContent,
    IslandText,
@@ -11,6 +10,7 @@ import {
 import styled from "styled-components";
 import { useState } from "react";
 import { projects, project } from "../../data/projectAll";
+import { COLORS, FONTS } from "../../styles/themes";
 
 const ImageSize = styled.div`
    width: clamp(8rem, 10vw, 10rem);
@@ -18,19 +18,43 @@ const ImageSize = styled.div`
 `;
 
 const IconSize = styled.div`
-   width: clamp(3rem, 10vw, 4rem);
-   &:hover {
-      cursor: pointer;
-      transform: scale(1.2);
-      margin-top: -1rem;
-      transition: 0.4s;
-   }
+   width: 4rem;
 `;
 
 const IconStyle = styled.img`
    width: 90%;
    object-fit: cover;
    border-radius: 1rem;
+`;
+
+const IconButton = styled.div`
+   display: flex;
+   align-items: center;
+   width: 50%;
+   flex-direction: column;
+   align-items: center;
+   &:hover {
+      cursor: pointer;
+   }
+`;
+
+export const IconText = styled.div`
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   span {
+      display: absolute;
+
+      ${FONTS.SECONDARY};
+      color: ${COLORS.BLACK};
+   }
+
+   ${IconButton}:hover & {
+      span {
+         color: ${COLORS.PRIMARY};
+      }
+   }
 `;
 
 const MyWork = () => {
@@ -76,18 +100,17 @@ const MyWork = () => {
             </IslandContent>
             <IslandTools>
                {uniqueStacksArray.map((stack, idx) => (
-                  <div
-                     className="d-flex flex-column align-items-center w-50"
+                  <IconButton
                      onClick={() => handleSlideChange(stack)}
                      key={idx}
                   >
                      <IconSize>
-                        <IconStyle src={uniqueIconStacksArray[0]} alt="img" />
+                        <IconStyle src={uniqueIconStacksArray[idx]} alt="img" />
                      </IconSize>
                      <IconText>
                         <span>{stack}</span>
                      </IconText>
-                  </div>
+                  </IconButton>
                ))}
             </IslandTools>
          </InsideIsland>

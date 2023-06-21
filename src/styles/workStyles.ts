@@ -115,7 +115,7 @@ export const IslandTools = styled.div`
    border-radius: 1rem;
    overflow-x: scroll;
    scrollbar-width: thin;
-   padding: 0 0.5rem;
+   padding: 0.5rem;
    &::-webkit-scrollbar {
       height: 6px;
    }
@@ -127,16 +127,5 @@ export const IslandTools = styled.div`
 
    @media (max-width: 520px) {
       border-radius: 1rem;
-   }
-`;
-
-export const IconText = styled.div`
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   span {
-      ${FONTS.SECONDARY};
-      color: ${COLORS.BLACK};
    }
 `;

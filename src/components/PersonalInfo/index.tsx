@@ -15,6 +15,7 @@ import Mypic from "../../assets/mylogo.png";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { DocumentPerson } from "@styled-icons/fluentui-system-filled/DocumentPerson";
 import CertificateSlider from "./CertificateSlider";
+import ProgressSteps from "./ProgressSteps";
 
 const GitHubIcon = styled(Github)`
    width: 2rem;
@@ -50,28 +51,31 @@ const PersonalInfo = () => {
                </InfoContent>
             </InfoLayout>
             <br />
+            <br />
             <ProgressLayout>
-               <p>asd</p>
+               <div className="d-flex justify-content-center w-100">
+                  <ProgressSteps />
+               </div>
                <CertificateSlider />
             </ProgressLayout>
             <br />
+            <br />
             <HobbyLayout>
-               <div className="d-flex flex-column">
+               <div className="d-flex flex-column w-100 align-items-center">
                   <InfoName>Hobby</InfoName>
-                  <ul>
+                  <ul className="d-flex flex-column w-50 align-items-start">
                      <li>Badminton</li>
                      <li>Boardgame</li>
                      <li>Learn something new</li>
                      <li>Write code</li>
                   </ul>
                </div>
-               <div className="d-flex flex-column">
-                  <InfoName>Other Skill</InfoName>
-                  <ul>
-                     <li>UX/UI</li>
-                     <li>Creative</li>
-                     <li>Image Virtualization</li>
-                     <li>Arduino</li>
+               <div className="d-flex flex-column w-100 align-items-center">
+                  <InfoName>Soft Skill</InfoName>
+                  <ul className="d-flex flex-column w-50 align-items-start">
+                     <li>Adaptability and Flexibility</li>
+                     <li>Creativity</li>
+                     <li>Time Management</li>
                   </ul>
                </div>
             </HobbyLayout>

@@ -22,7 +22,7 @@ export const LayoutContent = styled.div`
 `;
 
 export const LayoutBlueContent = styled(LayoutContent)`
-   justify-content: center;
+   justify-content: start;
    background-color: ${COLORS.SECONDARY};
    border-radius: 15px 15px 0 0;
    @media (max-width: 1400px) {
