@@ -74,8 +74,8 @@ const NavMenu = ({ isShowMenu, setIsShowMenu }) => {
                <Link to="/my-work">
                   <NavText>My Work</NavText>
                </Link>
-               <Link to="/personal-info">
-                  <NavText>Personal Info</NavText>
+               <Link to="/about-me">
+                  <NavText>About Me</NavText>
                </Link>
                <Link to="/contact">
                   <NavText>Contact</NavText>

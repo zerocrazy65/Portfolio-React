@@ -15,7 +15,7 @@ export const projects: project[] = [
       description:
          "This is a web application game created using web development languages. It is a basic English practice game designed for kids aged 5 to 13. This game helps children learn spelling and remember vocabulary from various categories.",
       difficulty: "Moderate",
-      videos: "asd",
+      videos: "myvideo",
    },
    {
       tag: ["Study Project", "Fullstack"],
@@ -31,7 +31,7 @@ export const projects: project[] = [
       title: "OPDC Data retriever",
       tools: ["jQuery", "Flask", "PostgreSQL"],
       description:
-         "This project is a website design to handle data, monitoring information and generate download links for data files stored in the database.  ",
+         "(Inside content not allowed to be published) This project is a website design to handle data, monitoring information and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       videos: "asd",
    },

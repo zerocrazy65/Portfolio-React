@@ -154,6 +154,7 @@ export const ImageBox = styled.div`
    background-size: cover;
    background-position: center;
    transition: width 0.3s;
+   background-color: ${COLORS.SECONDARY};
    @media (max-width: 1400px) {
       border-radius: 20px;
       height: 30vh;
@@ -209,6 +210,15 @@ export const ImageContainer = styled.div`
 `;
 
 export const ImageSlider = styled.img`
+   width: fit-content;
+   height: 30vh;
+   border-radius: 15px;
+   @media (max-width: 620px) {
+      height: 20vh;
+   }
+`;
+
+export const VDOSlider = styled.video`
    width: fit-content;
    height: 30vh;
    border-radius: 15px;

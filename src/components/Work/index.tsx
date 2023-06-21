@@ -64,7 +64,6 @@ const MyWork = () => {
    const handleSlideChange = (name: string) => {
       const result = projects.filter((project) => project.stack == name);
       setstoreData(result);
-      console.log(storeData);
    };
 
    const uniqueStacks = new Set<string>();
@@ -86,8 +85,8 @@ const MyWork = () => {
             <IslandContent>
                <div className="d-flex flex-column align-items-start">
                   {storeData.map((item, idx) => (
-                     <VerticalReveal transition={30 * idx}>
-                        <ContentLayout key={idx}>
+                     <VerticalReveal transition={30 * idx} key={idx}>
+                        <ContentLayout>
                            <ImageSize>
                               <IconStyle src={item.image} alt="" />
                            </ImageSize>
@@ -104,11 +103,8 @@ const MyWork = () => {
             </IslandContent>
             <IslandTools>
                {uniqueStacksArray.map((stack, idx) => (
-                  <HorizonReveal transition={10 * idx}>
-                     <IconButton
-                        onClick={() => handleSlideChange(stack)}
-                        key={idx}
-                     >
+                  <HorizonReveal transition={10 * idx} key={idx}>
+                     <IconButton onClick={() => handleSlideChange(stack)}>
                         <IconSize>
                            <IconStyle
                               src={uniqueIconStacksArray[idx]}
