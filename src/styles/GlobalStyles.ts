@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${COLORS.WHITE};
         box-shadow: -15px 15px 2px rgba(0, 0, 0, 0.15);
         overflow-y: scroll;
+        overflow-x: hidden;
         scrollbar-width: thin;
     }
     

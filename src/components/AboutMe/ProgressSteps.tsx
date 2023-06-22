@@ -11,7 +11,7 @@ import {
    StepLabelYear,
 } from "../../styles/aboutMeStyles";
 import { progresses } from "../../data/progress";
-import { VerticalReveal } from "../../layout/ScrollReveal";
+import { VerticalReveal } from "../ScrollReveal";
 
 const ProgressSteps = () => {
    return (

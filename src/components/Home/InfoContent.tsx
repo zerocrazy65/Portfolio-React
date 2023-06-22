@@ -1,4 +1,4 @@
-import { HorizonReveal, VerticalReveal } from "../../layout/ScrollReveal";
+import { HorizonReveal, VerticalReveal } from "../ScrollReveal";
 import {
    Body,
    ButtonGit,

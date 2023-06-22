@@ -10,6 +10,7 @@ import {
 } from "../../styles/homeStyles";
 import myvideo from "../../assets/projectVDO/myvideo.mp4";
 import opdcWork from "../../assets/imgs/opdc-work.png";
+import LazyLoadYoutube from "../LazyLoading";
 
 SwiperCore.use([Navigation, EffectCoverflow]);
 
@@ -20,16 +21,23 @@ const CertificateSlider = ({ onSlideChange }) => {
       const index = swiper.realIndex;
       onSlideChange(index);
 
-      const videos = document.querySelectorAll("video");
+      const videos = document.querySelectorAll("iframe");
       videos.forEach((video) => {
-         video.pause();
-         video.currentTime = 0;
+         if (video.contentWindow) {
+            video.contentWindow.postMessage(
+               '{"event":"command","func":"pauseVideo","args":""}',
+               "*"
+            );
+         }
       });
 
       const activeSlide = swiperRef.current?.swiper.slides[index];
-      const video = activeSlide?.querySelector("video");
+      const video = activeSlide?.querySelector("iframe");
       if (video) {
-         video.play();
+         video.contentWindow.postMessage(
+            '{"event":"command","func":"playVideo","args":""}',
+            "*"
+         );
       }
    };
 
@@ -46,22 +54,17 @@ const CertificateSlider = ({ onSlideChange }) => {
          >
             <Slider>
                <SwiperStyle>
-                  <VDOSlider src={myvideo} autoPlay></VDOSlider>
+                  <LazyLoadYoutube videoId="Q8EpCEYNxCs"></LazyLoadYoutube>
                </SwiperStyle>
             </Slider>
             <Slider>
                <SwiperStyle>
-                  <VDOSlider src={myvideo} autoPlay></VDOSlider>
+                  <LazyLoadYoutube videoId="Q8EpCEYNxCs"></LazyLoadYoutube>
                </SwiperStyle>
             </Slider>
             <Slider>
                <SwiperStyle>
                   <ImageSlider src={opdcWork}></ImageSlider>
-               </SwiperStyle>
-            </Slider>
-            <Slider>
-               <SwiperStyle>
-                  <VDOSlider src={myvideo} autoPlay></VDOSlider>
                </SwiperStyle>
             </Slider>
          </Swiper>

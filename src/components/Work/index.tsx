@@ -11,7 +11,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { projects, project } from "../../data/projectAll";
 import { COLORS, FONTS } from "../../styles/themes";
-import { VerticalReveal, HorizonReveal } from "../../layout/ScrollReveal";
+import { VerticalReveal, HorizonReveal } from "../ScrollReveal";
 
 const ImageSize = styled.div`
    width: clamp(8rem, 10vw, 10rem);

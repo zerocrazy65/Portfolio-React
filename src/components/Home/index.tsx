@@ -14,7 +14,7 @@ import {
 import GalleryHover from "./GalleryHover";
 import InfoContent from "./InfoContent";
 import ProjectSlider from "./ProjectSlider";
-import { HorizonReveal, VerticalReveal } from "../../layout/ScrollReveal";
+import { HorizonReveal, VerticalReveal } from "../ScrollReveal";
 const imgBoxes = document.querySelectorAll(".img-box");
 
 imgBoxes.forEach((box) => {
@@ -81,10 +81,7 @@ const HomePage = () => {
                   </VerticalReveal>
                </div>
                <br />
-               <ProjectSlider
-                  currentIndex={currentIndex}
-                  onSlideChange={handleSlideChange}
-               />
+               <ProjectSlider onSlideChange={handleSlideChange} />
             </LayoutBlueContent>
          </div>
       </IslandBG>

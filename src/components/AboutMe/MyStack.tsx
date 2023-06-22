@@ -1,6 +1,6 @@
 import { StackLayout, InfoName } from "../../styles/aboutMeStyles";
 import { Body } from "../../styles/homeStyles";
-import { HorizonReveal, VerticalReveal } from "../../layout/ScrollReveal";
+import { HorizonReveal, VerticalReveal } from "../ScrollReveal";
 import styled from "styled-components";
 
 const StackContainer = styled.div`

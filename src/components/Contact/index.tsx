@@ -7,7 +7,7 @@ import { Call } from "@styled-icons/fluentui-system-regular/Call";
 import { FacebookCircle } from "@styled-icons/boxicons-logos/FacebookCircle";
 import { Github } from "@styled-icons/boxicons-logos/Github";
 import { COLORS, FONTS, FONT_SIZE } from "../../styles/themes";
-import { HorizonReveal } from "../../layout/ScrollReveal";
+import { HorizonReveal } from "../ScrollReveal";
 
 const ThemeIcon = css`
    color: ${COLORS.WHITE};
@@ -107,12 +107,12 @@ const Contact = () => {
                      </HorizonReveal>
                   </div>
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <HorizonReveal transition={100}>
+                     <HorizonReveal transition={60}>
                         <IconCircle>
                            <GithubIcon />
                         </IconCircle>
                      </HorizonReveal>
-                     <HorizonReveal transition={150}>
+                     <HorizonReveal transition={70}>
                         <ContactFont>
                            <LinkTo href="https://github.com/zerocrazy65">
                               Zerocrazy65
@@ -123,12 +123,12 @@ const Contact = () => {
                </div>
                <div className="d-flex flex-column gap-5">
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <HorizonReveal transition={200}>
+                     <HorizonReveal transition={80}>
                         <IconCircle>
                            <EmailIcon />
                         </IconCircle>
                      </HorizonReveal>
-                     <HorizonReveal transition={250}>
+                     <HorizonReveal transition={90}>
                         <ContactFont>
                            <LinkTo href="mailto:katapat@gmail.com">
                               katapat43@gmail.com
@@ -137,12 +137,12 @@ const Contact = () => {
                      </HorizonReveal>
                   </div>
                   <div className="d-flex flex-row align-items-center gap-3">
-                     <HorizonReveal transition={300}>
+                     <HorizonReveal transition={100}>
                         <IconCircle>
                            <LocationIcon />
                         </IconCircle>
                      </HorizonReveal>
-                     <HorizonReveal transition={400}>
+                     <HorizonReveal transition={120}>
                         <ContactFont>
                            Bangkadi Samae Dam, Bang Khun Thian, Bangkok
                         </ContactFont>

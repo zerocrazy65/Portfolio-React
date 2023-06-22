@@ -15,7 +15,7 @@ import { Github } from "@styled-icons/boxicons-logos/Github";
 import { DocumentPerson } from "@styled-icons/fluentui-system-filled/DocumentPerson";
 import CertificateSlider from "./CertificateSlider";
 import ProgressSteps from "./ProgressSteps";
-import { HorizonReveal, VerticalReveal } from "../../layout/ScrollReveal";
+import { HorizonReveal, VerticalReveal } from "../ScrollReveal";
 import MyStack from "./MyStack";
 
 const GitHubIcon = styled(Github)`

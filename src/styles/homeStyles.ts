@@ -226,6 +226,18 @@ export const VDOSlider = styled.video`
       height: 20vh;
    }
 `;
+export const YouSlider = styled.iframe`
+   width: 30vw;
+   height: 30vh;
+   border-radius: 15px;
+   @media (max-width: 1400px) {
+      width: 50vw;
+   }
+   @media (max-width: 620px) {
+      width: 70vw;
+      height: 20vh;
+   }
+`;
 
 export const SwiperStyle = styled.div`
    background-color: ${COLORS.ORANGE};
