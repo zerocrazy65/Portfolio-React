@@ -218,14 +218,6 @@ export const ImageSlider = styled.img`
    }
 `;
 
-export const VDOSlider = styled.video`
-   width: fit-content;
-   height: 30vh;
-   border-radius: 15px;
-   @media (max-width: 620px) {
-      height: 20vh;
-   }
-`;
 export const YouSlider = styled.iframe`
    width: 30vw;
    height: 30vh;

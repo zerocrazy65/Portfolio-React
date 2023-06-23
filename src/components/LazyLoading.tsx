@@ -30,7 +30,12 @@ const LazyLoadYoutube: React.FC<LazyLoadYoutubeProps> = ({ videoId }) => {
 
    return (
       <div ref={ref} className="lazy-iframe">
-         <YouSlider ref={iframeRef} title="YouTube Video" allow="autoplay" />
+         <YouSlider
+            ref={iframeRef}
+            title="YouTube Video"
+            allow="autoplay"
+            allowFullScreen
+         />
       </div>
    );
 };

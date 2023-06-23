@@ -1,12 +1,19 @@
-import TestImage from "../assets/imgs/mypic1.jpg";
-import TestImag2 from "../assets/imgs/mypic2.jpg";
-
 import frontendIcon from "../assets/icons/fontend.png";
 import reactIcon from "../assets/icons/react.png";
 import vueIcon from "../assets/icons/vue.png";
 import flutterIcon from "../assets/icons/flutter.png";
 import flaskIcon from "../assets/icons/flask.png";
 import p5Icon from "../assets/icons/p5.js.png";
+
+import plantplayImg from "../assets/myProjects/plantplay.png";
+import growordImg from "../assets/myProjects/groword.png";
+import megchaImg from "../assets/myProjects/megcha.png";
+import seniorImg from "../assets/myProjects/senior-work.png";
+import opdcImg from "../assets/myProjects/opdc-work.png";
+import challenge1 from "../assets/myProjects/challenge1.jpg";
+import challenge2 from "../assets/myProjects/challenge2.jpg";
+import challenge3 from "../assets/myProjects/challenge3.jpg";
+import challenge4 from "../assets/myProjects/challenge4.jpg";
 
 export type project = {
    tag?: string[];
@@ -27,7 +34,7 @@ export const projects: project[] = [
          "This is a web applidevelopment languages. It is a basic English practice game designed for kids aged 5 to 13. This game helps children learn spelling and remember vocabulary from various categories.",
       difficulty: "Moderate",
       icon: vueIcon,
-      image: TestImage,
+      image: growordImg,
    },
    {
       tag: ["Study Project", "Fullstack"],
@@ -37,7 +44,7 @@ export const projects: project[] = [
          "This is an E-Commerce web whirelated to mechanical keyboard",
       difficulty: "Basic",
       icon: reactIcon,
-      image: TestImage,
+      image: megchaImg,
    },
    {
       tag: ["Study Project", "Fullstack"],
@@ -47,17 +54,7 @@ export const projects: project[] = [
          "This is an E-Commerce applicatallows trading merchandise related to indoor plants ",
       difficulty: "Moderate",
       icon: flutterIcon,
-      image: TestImag2,
-   },
-   {
-      tag: ["Study Project", "Fullstack"],
-      title: "Plantplay",
-      stack: "Flutter",
-      description:
-         "This is an E-Cusing Flutter. Which allows trading merchandise related to indoor plants ",
-      difficulty: "Moderate",
-      icon: flutterIcon,
-      image: TestImage,
+      image: plantplayImg,
    },
    {
       tag: ["Senior Project", "Fullstack"],
@@ -67,7 +64,7 @@ export const projects: project[] = [
          "This project is an IoT-based sritizes safety by using laser bullets instead of real bullets. It integrates with IoT technology to send real-time data to a mobile application, allowing users to view live score and analyze their performance.",
       difficulty: "Advance",
       icon: flutterIcon,
-      image: TestImag2,
+      image: seniorImg,
    },
    {
       tag: ["Government Project", "Fullstack"],
@@ -77,8 +74,9 @@ export const projects: project[] = [
          "This project is a monitoring information and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       icon: flaskIcon,
-      image: TestImage,
+      image: opdcImg,
    },
+   //
    {
       tag: ["Government Project", "Fullstack"],
       title: "OPDC Data retriever",
@@ -87,7 +85,18 @@ export const projects: project[] = [
          "This project is a webring information and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       icon: p5Icon,
-      image: TestImage,
+      image: plantplayImg,
+   },
+   //
+   {
+      tag: ["Government Project", "Fullstack"],
+      title: "OPDC Data retriever",
+      stack: "frontend",
+      description:
+         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
+      difficulty: "Moderate",
+      icon: frontendIcon,
+      image: challenge1,
    },
    {
       tag: ["Government Project", "Fullstack"],
@@ -97,6 +106,26 @@ export const projects: project[] = [
          "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
       difficulty: "Moderate",
       icon: frontendIcon,
-      image: TestImage,
+      image: challenge2,
+   },
+   {
+      tag: ["Government Project", "Fullstack"],
+      title: "OPDC Data retriever",
+      stack: "frontend",
+      description:
+         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
+      difficulty: "Moderate",
+      icon: frontendIcon,
+      image: challenge3,
+   },
+   {
+      tag: ["Government Project", "Fullstack"],
+      title: "OPDC Data retriever",
+      stack: "frontend",
+      description:
+         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
+      difficulty: "Moderate",
+      icon: frontendIcon,
+      image: challenge4,
    },
 ];

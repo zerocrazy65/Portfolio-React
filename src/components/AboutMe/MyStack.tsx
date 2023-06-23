@@ -11,7 +11,7 @@ const StackContainer = styled.div`
       gap: 1rem;
    }
    @media (max-width: 420px) {
-      gap: 0rem;
+      gap: 0.5rem;
    }
 `;
 
@@ -28,19 +28,19 @@ const MyStack = () => {
                      <HorizonReveal transition={60}>
                         <Body>Front-End</Body>
                      </HorizonReveal>
-                     <VerticalReveal transition={70}>
+                     <VerticalReveal transition={90}>
                         <li>React</li>
                      </VerticalReveal>
-                     <VerticalReveal transition={80}>
+                     <VerticalReveal transition={90}>
                         <li>Vue</li>
                      </VerticalReveal>
                      <VerticalReveal transition={90}>
                         <li>StyleComponent</li>
                      </VerticalReveal>
-                     <VerticalReveal transition={100}>
+                     <VerticalReveal transition={90}>
                         <li>Bootstrap</li>
                      </VerticalReveal>
-                     <VerticalReveal transition={110}>
+                     <VerticalReveal transition={50}>
                         <li>Sass</li>
                      </VerticalReveal>
                   </ul>
@@ -50,7 +50,7 @@ const MyStack = () => {
                      <HorizonReveal transition={100}>
                         <Body>Back-End</Body>
                      </HorizonReveal>
-                     <VerticalReveal transition={60}>
+                     <VerticalReveal transition={70}>
                         <li>NodeJS</li>
                      </VerticalReveal>
                      <VerticalReveal transition={70}>
@@ -59,7 +59,7 @@ const MyStack = () => {
                      <VerticalReveal transition={70}>
                         <li>MySQL</li>
                      </VerticalReveal>
-                     <VerticalReveal transition={80}>
+                     <VerticalReveal transition={70}>
                         <li>Firebase</li>
                      </VerticalReveal>
                   </ul>

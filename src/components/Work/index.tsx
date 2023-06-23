@@ -23,9 +23,8 @@ const IconSize = styled.div`
 `;
 
 const IconStyle = styled.img`
-   width: 90%;
-   object-fit: cover;
-   border-radius: 1rem;
+   width: 100%;
+   border-radius: 0.5rem;
 `;
 
 const IconButton = styled.div`

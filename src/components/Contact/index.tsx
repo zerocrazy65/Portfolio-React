@@ -90,7 +90,10 @@ const Contact = () => {
                      </HorizonReveal>
                      <HorizonReveal transition={30}>
                         <ContactFont>
-                           <LinkTo href="https://www.facebook.com/katapat.supamatheekulawat">
+                           <LinkTo
+                              href="https://www.facebook.com/katapat.supamatheekulawat"
+                              target="_blank"
+                           >
                               Katapat Supamatheekulawat
                            </LinkTo>
                         </ContactFont>
@@ -114,7 +117,10 @@ const Contact = () => {
                      </HorizonReveal>
                      <HorizonReveal transition={70}>
                         <ContactFont>
-                           <LinkTo href="https://github.com/zerocrazy65">
+                           <LinkTo
+                              href="https://github.com/zerocrazy65"
+                              target="_blank"
+                           >
                               Zerocrazy65
                            </LinkTo>
                         </ContactFont>

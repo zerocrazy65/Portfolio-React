@@ -64,7 +64,7 @@ const HomePage = () => {
                   </HorizonReveal>
                   <HorizonReveal transition={40}>
                      <ProjectTools className="d-flex flex-row align-items-center">
-                        <strong>Stack</strong>&nbsp;
+                        <strong>Stack :</strong>&nbsp;
                         {currentProject.tools.join(", ")}
                      </ProjectTools>
                   </HorizonReveal>

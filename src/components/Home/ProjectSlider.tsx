@@ -5,11 +5,10 @@ import {
    ImageContainer,
    SwiperStyle,
    Slider,
-   VDOSlider,
    ImageSlider,
 } from "../../styles/homeStyles";
-import myvideo from "../../assets/projectVDO/myvideo.mp4";
-import opdcWork from "../../assets/imgs/opdc-work.png";
+import opdcWork from "../../assets/myProjects/opdc-work.png";
+import seniorWork from "../../assets/myProjects/senior-work.png";
 import LazyLoadYoutube from "../LazyLoading";
 
 SwiperCore.use([Navigation, EffectCoverflow]);
@@ -54,17 +53,32 @@ const CertificateSlider = ({ onSlideChange }) => {
          >
             <Slider>
                <SwiperStyle>
-                  <LazyLoadYoutube videoId="Q8EpCEYNxCs"></LazyLoadYoutube>
+                  <LazyLoadYoutube videoId="ObuazO0krEs"></LazyLoadYoutube>
                </SwiperStyle>
             </Slider>
             <Slider>
                <SwiperStyle>
-                  <LazyLoadYoutube videoId="Q8EpCEYNxCs"></LazyLoadYoutube>
+                  <LazyLoadYoutube videoId="2o48N3CODHU"></LazyLoadYoutube>
                </SwiperStyle>
             </Slider>
             <Slider>
                <SwiperStyle>
                   <ImageSlider src={opdcWork}></ImageSlider>
+               </SwiperStyle>
+            </Slider>
+            <Slider>
+               <SwiperStyle>
+                  <LazyLoadYoutube videoId="WX0GE4F0pqg"></LazyLoadYoutube>
+               </SwiperStyle>
+            </Slider>
+            <Slider>
+               <SwiperStyle>
+                  <LazyLoadYoutube videoId="89yHOR6zAtQ"></LazyLoadYoutube>
+               </SwiperStyle>
+            </Slider>
+            <Slider>
+               <SwiperStyle>
+                  <ImageSlider src={seniorWork}></ImageSlider>
                </SwiperStyle>
             </Slider>
          </Swiper>
