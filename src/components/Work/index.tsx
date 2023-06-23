@@ -38,7 +38,7 @@ const IconButton = styled.div`
    }
 `;
 
-export const IconText = styled.div`
+const IconText = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
@@ -54,6 +54,14 @@ export const IconText = styled.div`
       span {
          color: ${COLORS.PRIMARY};
       }
+   }
+`;
+
+const LinkTo = styled.a`
+   width: fit-content;
+   color: ${COLORS.PRIMARY};
+   &:hover {
+      color: ${COLORS.SECONDARY};
    }
 `;
 
@@ -89,10 +97,27 @@ const MyWork = () => {
                            <ImageSize>
                               <IconStyle src={item.image} alt="" />
                            </ImageSize>
-
                            <IslandTextArea>
                               <IslandText>
+                                 <span
+                                    style={{
+                                       color: `${COLORS.PRIMARY}`,
+                                       fontWeight: "bold",
+                                    }}
+                                 >
+                                    {item.title}
+                                 </span>
                                  <span>{item.description}</span>
+                                 {item.link ? (
+                                    <LinkTo href={item.link}>Link</LinkTo>
+                                 ) : null}
+                                 <p
+                                    className={item.difficulty
+                                       .toLowerCase()
+                                       .replace(/\s+/g, "-")}
+                                 >
+                                    {item.difficulty}
+                                 </p>
                               </IslandText>
                            </IslandTextArea>
                         </ContentLayout>

@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { COLORS, FONTS, FONT_SIZE } from "./themes";
 import { HomeStyle } from "./homeStyles";
+import { WorkStyle } from "./workStyles";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -67,4 +68,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ${HomeStyle}
+
+    ${WorkStyle}
 `;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { COLORS, FONTS, FONT_SIZE } from "./themes";
 
 export const InsideIsland = styled.div`
@@ -131,5 +131,29 @@ export const IslandTools = styled.div`
    }
    @media (max-width: 1000px) {
       justify-content: start;
+   }
+`;
+//
+const difficultStyle = css`
+   font-size: ${FONT_SIZE.XS};
+   ${FONTS.SECONDARY};
+   width: fit-content;
+   color: ${COLORS.WHITE};
+   padding: 0 1rem 0 1rem;
+   border-radius: 1rem;
+`;
+
+export const WorkStyle = css`
+   .advanced {
+      ${difficultStyle}
+      background-color: ${COLORS.IOSR};
+   }
+   .moderate {
+      ${difficultStyle}
+      background-color: ${COLORS.IOSY};
+   }
+   .basic {
+      ${difficultStyle}
+      background-color: ${COLORS.IOSG};
    }
 `;

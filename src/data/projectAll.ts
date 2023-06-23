@@ -14,60 +14,58 @@ import challenge1 from "../assets/myProjects/challenge1.jpg";
 import challenge2 from "../assets/myProjects/challenge2.jpg";
 import challenge3 from "../assets/myProjects/challenge3.jpg";
 import challenge4 from "../assets/myProjects/challenge4.jpg";
+import p5work1 from "../assets/myProjects/p5work1.png";
+import p5work2 from "../assets/myProjects/p5work2.png";
+import processing from "../assets/myProjects/processing.png";
 
 export type project = {
-   tag?: string[];
    title: string;
    stack: string;
    description: string;
    difficulty: string;
-   icon?: string;
-   image?: string;
+   link?: string;
+   icon: string;
+   image: string;
 };
 
 export const projects: project[] = [
    {
-      tag: ["Internship Project", "Fullstack"],
       title: "Groword",
       stack: "Vue.js",
       description:
-         "This is a web applidevelopment languages. It is a basic English practice game designed for kids aged 5 to 13. This game helps children learn spelling and remember vocabulary from various categories.",
+         "Web basic English practice game designed for kids aged 5 to 13. Help children learn spelling and remember vocabulary from various categories.",
       difficulty: "Moderate",
       icon: vueIcon,
       image: growordImg,
    },
    {
-      tag: ["Study Project", "Fullstack"],
       title: "Magcha",
       stack: "React",
       description:
-         "This is an E-Commerce web whirelated to mechanical keyboard",
+         "E-Commerce web about trading merchandise related to mechanical keyboard",
       difficulty: "Basic",
       icon: reactIcon,
       image: megchaImg,
    },
    {
-      tag: ["Study Project", "Fullstack"],
       title: "Plantplay",
       stack: "Flutter",
       description:
-         "This is an E-Commerce applicatallows trading merchandise related to indoor plants ",
+         "E-Commerce application created using Flutter. Which allows trading merchandise related to indoor plants ",
       difficulty: "Moderate",
       icon: flutterIcon,
       image: plantplayImg,
    },
    {
-      tag: ["Senior Project", "Fullstack"],
       title: "Shooting Practice Kit IoT",
       stack: "Flutter",
       description:
-         "This project is an IoT-based sritizes safety by using laser bullets instead of real bullets. It integrates with IoT technology to send real-time data to a mobile application, allowing users to view live score and analyze their performance.",
-      difficulty: "Advance",
+         "My senior project IoT-based shooting practice kit, show real-time scores to mobile application and analyzed their performance",
+      difficulty: "Advanced",
       icon: flutterIcon,
       image: seniorImg,
    },
    {
-      tag: ["Government Project", "Fullstack"],
       title: "OPDC Data retriever",
       stack: "Flask",
       description:
@@ -76,55 +74,69 @@ export const projects: project[] = [
       icon: flaskIcon,
       image: opdcImg,
    },
-   //
    {
-      tag: ["Government Project", "Fullstack"],
-      title: "OPDC Data retriever",
+      title: "Country Art",
       stack: "P5.js",
       description:
-         "This project is a webring information and generate download links for data files stored in the database.  ",
-      difficulty: "Moderate",
+         "Generate art project is the project can generate art by country you selected",
+      difficulty: "Basic",
+      link: "https://editor.p5js.org/katapat.43/sketches/RQAHZOZKf",
       icon: p5Icon,
-      image: plantplayImg,
+      image: p5work1,
    },
-   //
    {
-      tag: ["Government Project", "Fullstack"],
-      title: "OPDC Data retriever",
-      stack: "frontend",
+      title: "Sunflower Clock",
+      stack: "P5.js",
       description:
-         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
+         "A clock that count time using flowers and leaves to count the time",
+      difficulty: "Basic",
+      link: "https://editor.p5js.org/katapat.43/sketches/t3UPyzS-S",
+      icon: p5Icon,
+      image: p5work2,
+   },
+   {
+      title: "Music Visualization",
+      stack: "P5.js",
+      description:
+         "Music Visualization by Processing using amplitude of sound buffer to make visualizations",
       difficulty: "Moderate",
+      link: "https://www.youtube.com/watch?v=97rOzGpVGLY",
+      icon: p5Icon,
+      image: processing,
+   },
+   {
+      title: "Frontend Mentor",
+      stack: "CloneUI",
+      description:
+         "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
+      difficulty: "Basic",
       icon: frontendIcon,
       image: challenge1,
    },
    {
-      tag: ["Government Project", "Fullstack"],
-      title: "OPDC Data retriever",
-      stack: "frontend",
+      title: "Frontend Mentor",
+      stack: "CloneUI",
       description:
-         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
-      difficulty: "Moderate",
+         "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
+      difficulty: "Basic",
       icon: frontendIcon,
       image: challenge2,
    },
    {
-      tag: ["Government Project", "Fullstack"],
-      title: "OPDC Data retriever",
-      stack: "frontend",
+      title: "Frontend Mentor",
+      stack: "CloneUI",
       description:
-         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
-      difficulty: "Moderate",
+         "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
+      difficulty: "Basic",
       icon: frontendIcon,
       image: challenge3,
    },
    {
-      tag: ["Government Project", "Fullstack"],
-      title: "OPDC Data retriever",
-      stack: "frontend",
+      title: "Frontend Mentor",
+      stack: "CloneUI",
       description:
-         "This project is a website design to handle data, monition and generate download links for data files stored in the database.  ",
-      difficulty: "Moderate",
+         "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
+      difficulty: "Basic",
       icon: frontendIcon,
       image: challenge4,
    },

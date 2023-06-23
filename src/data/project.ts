@@ -53,6 +53,6 @@ export const projects: project[] = [
       tools: ["Flutter", "Firebase", "Arduino", "Node.js"],
       description:
          "This project is an IoT-based shooting practice kit that prioritizes safety by using laser bullets instead of real bullets. It integrates with IoT technology to send real-time data to a mobile application, allowing users to view live score and analyze their performance.",
-      difficulty: "Advance",
+      difficulty: "Advanced",
    },
 ];
