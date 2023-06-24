@@ -12,6 +12,8 @@ import { useState } from "react";
 import { projects, project } from "../../data/projectAll";
 import { COLORS, FONTS } from "../../styles/themes";
 import { VerticalReveal, HorizonReveal } from "../ScrollReveal";
+import { AnimationIcon } from "../../styles/navigateStyles";
+import loadingAnimation from "../../assets/animation/loading.json";
 
 const ImageSize = styled.div`
    width: clamp(8rem, 10vw, 10rem);
@@ -95,7 +97,15 @@ const MyWork = () => {
                      <VerticalReveal transition={30 * idx} key={idx}>
                         <ContentLayout>
                            <ImageSize>
-                              <IconStyle src={item.image} alt="" />
+                              {item.image ? (
+                                 <IconStyle src={item.image} alt="asd" />
+                              ) : (
+                                 <AnimationIcon
+                                    loop
+                                    hover
+                                    src={loadingAnimation}
+                                 />
+                              )}
                            </ImageSize>
                            <IslandTextArea>
                               <IslandText>
