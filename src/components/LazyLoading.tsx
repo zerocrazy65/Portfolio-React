@@ -14,7 +14,7 @@ const LazyLoadYoutube: React.FC<LazyLoadYoutubeProps> = ({ videoId }) => {
       const iframe = iframeRef.current;
 
       if (inView && iframe) {
-         const src = `https://www.youtube.com/embed/${videoId}`;
+         const src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1`;
          iframe.src = src;
       } else if (!inView && iframe && iframe.contentWindow) {
          const contentWindow = iframe.contentWindow;

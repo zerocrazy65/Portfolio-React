@@ -66,7 +66,7 @@ export const projects: project[] = [
       image: seniorImg,
    },
    {
-      title: "OPDC Data retriever",
+      title: "OPDC Data Retriever",
       stack: "Flask",
       description:
          "This project is a monitoring information and generate download links for data files stored in the database.  ",

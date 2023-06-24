@@ -25,7 +25,7 @@ export const projects: project[] = [
    },
    {
       tag: ["Government Project", "Fullstack"],
-      title: "OPDC Data retriever",
+      title: "OPDC Data Retriever",
       tools: ["jQuery", "Flask", "PostgreSQL"],
       description:
          "(Inside content not allowed to be published) This project is a website design to handle data, monitoring information and generate download links for data files stored in the database.  ",
