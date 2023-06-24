@@ -93,7 +93,6 @@ const MyWork = () => {
          <InsideIsland>
             <IslandContent>
                <div className="d-flex flex-column align-items-start">
-                  <p>{storeData[0].image}</p>
                   {storeData.map((item, idx) => (
                      <VerticalReveal transition={30 * idx} key={idx}>
                         <ContentLayout>
