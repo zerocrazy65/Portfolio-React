@@ -19,25 +19,6 @@ const CertificateSlider = ({ onSlideChange }) => {
    const handleSlideChange = (swiper) => {
       const index = swiper.realIndex;
       onSlideChange(index);
-
-      const videos = document.querySelectorAll("iframe");
-      videos.forEach((video) => {
-         if (video.contentWindow) {
-            video.contentWindow.postMessage(
-               '{"event":"command","func":"pauseVideo","args":""}',
-               "*"
-            );
-         }
-      });
-
-      const activeSlide = swiperRef.current?.swiper.slides[index];
-      const video = activeSlide?.querySelector("iframe");
-      if (video) {
-         video.contentWindow.postMessage(
-            '{"event":"command","func":"playVideo","args":""}',
-            "*"
-         );
-      }
    };
 
    return (

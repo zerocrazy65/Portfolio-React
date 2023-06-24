@@ -14,7 +14,7 @@ const LazyLoadYoutube: React.FC<LazyLoadYoutubeProps> = ({ videoId }) => {
       const iframe = iframeRef.current;
 
       if (inView && iframe) {
-         const src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1`;
+         const src = `https://www.youtube.com/embed/${videoId}`;
          iframe.src = src;
       } else if (!inView && iframe && iframe.contentWindow) {
          const contentWindow = iframe.contentWindow;
@@ -30,12 +30,7 @@ const LazyLoadYoutube: React.FC<LazyLoadYoutubeProps> = ({ videoId }) => {
 
    return (
       <div ref={ref} className="lazy-iframe">
-         <YouSlider
-            ref={iframeRef}
-            title="YouTube Video"
-            allow="autoplay"
-            allowFullScreen
-         />
+         <YouSlider ref={iframeRef} title="YouTube Video" allowFullScreen />
       </div>
    );
 };

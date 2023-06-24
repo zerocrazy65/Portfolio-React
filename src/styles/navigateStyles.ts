@@ -3,7 +3,7 @@ import { COLORS, FONTS } from "./themes";
 import { Eye } from "@styled-icons/entypo/Eye";
 import { Player } from "@lottiefiles/react-lottie-player";
 export const NavSection = styled.section`
-   position: fixed;
+   position: absolute;
    width: 95%;
    z-index: 111;
    height: 5rem;

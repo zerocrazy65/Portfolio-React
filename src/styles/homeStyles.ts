@@ -210,7 +210,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const ImageSlider = styled.img`
-   width: fit-content;
+   width: 100%;
    height: 30vh;
    border-radius: 15px;
    @media (max-width: 620px) {
@@ -233,7 +233,6 @@ export const YouSlider = styled.iframe`
 
 export const SwiperStyle = styled.div`
    background-color: ${COLORS.ORANGE};
-   width: fit-content;
    padding: 2rem;
    border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 8px);
    @media (max-width: 425px) {
