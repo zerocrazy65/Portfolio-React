@@ -25,11 +25,10 @@ const IconCircle = styled.div`
 `;
 
 const ContactLayout = styled.div`
+   height: 80vh;
    display: flex;
+   align-items: center;
    justify-content: center;
-   align-items: flex-start;
-   margin-top: 10rem;
-   height: 60vh;
    @media (max-width: 620px) {
       padding: 2rem;
    }

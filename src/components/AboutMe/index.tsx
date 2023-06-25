@@ -16,6 +16,7 @@ import { DocumentPerson } from "@styled-icons/fluentui-system-filled/DocumentPer
 import CertificateSlider from "./CertificateSlider";
 import ProgressSteps from "./ProgressSteps";
 import { HorizonReveal, VerticalReveal } from "../ScrollReveal";
+import myresume from "../../assets/resume.pdf";
 import MyStack from "./MyStack";
 
 const GitHubIcon = styled(Github)`
@@ -51,7 +52,7 @@ const AboutMe = () => {
                         </LinkBtn>
                      </HorizonReveal>
                      <HorizonReveal transition={50}>
-                        <LinkBtn href={"https://github.com/zerocrazy65"}>
+                        <LinkBtn href={myresume}>
                            <ResumeIcon />
                            <span>Resume</span>
                         </LinkBtn>
