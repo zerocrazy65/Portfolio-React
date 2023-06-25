@@ -7,44 +7,44 @@ export type progress = {
 
 export const progresses: progress[] = [
    {
-      header: "Media Technology at KMUTT",
-      label: "",
+      header: "",
+      label: "Media Technology at KMUTT",
       year: "2019",
       icon: "GraduateIcon",
    },
    {
-      header: "NSC Competition",
-      label: "",
-      year: "",
-      icon: "BookIcon",
-   },
-   {
       header: "",
-      label: "Learn Web Development",
+      label: "NSC Competition",
       year: "2021",
       icon: "BookIcon",
    },
    {
       header: "",
+      label: "Learn Web Development",
+      year: "Feb-Jul 2022",
+      icon: "BookIcon",
+   },
+   {
+      header: "",
       label: "Intern at globish company",
-      year: "2022",
+      year: "Aug-Dec 2022",
       icon: "WorkIcon",
    },
    {
       header: "",
       label: "Learn more web development",
-      year: "2022",
+      year: "Jan-Mar 2023",
       icon: "BookIcon",
    },
    {
       header: "",
-      label: "Learn Flutter ",
-      year: "2023",
+      label: "Learn mobile development",
+      year: "Feb-May 2023",
       icon: "BookIcon",
    },
    {
       header: "",
-      label: "3.18",
+      label: "Graduate with 3.18",
       year: "NOW",
       icon: "CircleIcon",
    },

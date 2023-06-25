@@ -35,10 +35,10 @@ const MyStack = () => {
                         <li>Vue</li>
                      </VerticalReveal>
                      <VerticalReveal transition={90}>
-                        <li>StyleComponent</li>
+                        <li>Flutter</li>
                      </VerticalReveal>
                      <VerticalReveal transition={90}>
-                        <li>Bootstrap</li>
+                        <li>StyleComponent</li>
                      </VerticalReveal>
                      <VerticalReveal transition={50}>
                         <li>Sass</li>
