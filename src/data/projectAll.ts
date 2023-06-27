@@ -110,6 +110,7 @@ export const projects: project[] = [
       description:
          "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
       difficulty: "Basic",
+      link: "https://zerocrazy-challenge-1.netlify.app",
       icon: frontendIcon,
       image: challenge1,
    },
@@ -119,6 +120,7 @@ export const projects: project[] = [
       description:
          "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
       difficulty: "Basic",
+      link: "https://zerocrazy-challenge-2.netlify.app",
       icon: frontendIcon,
       image: challenge2,
    },
@@ -128,6 +130,7 @@ export const projects: project[] = [
       description:
          "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
       difficulty: "Basic",
+      link: "https://zerocrazy-challenge-3.netlify.app",
       icon: frontendIcon,
       image: challenge3,
    },
@@ -137,6 +140,7 @@ export const projects: project[] = [
       description:
          "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
       difficulty: "Basic",
+      link: "https://zerocrazy-challenge-4.netlify.app",
       icon: frontendIcon,
       image: challenge4,
    },
