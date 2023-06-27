@@ -79,8 +79,8 @@ export const projects: project[] = [
       stack: "P5.js",
       description:
          "Generate art project is the project can generate art by country you selected",
-      difficulty: "Basic",
-      link: "https://editor.p5js.org/katapat.43/sketches/RQAHZOZKf",
+      difficulty: "Moderate",
+      link: "https://editor.p5js.org/katapat.43/sketches/ZVHkHw7H4",
       icon: p5Icon,
       image: p5work1,
    },
