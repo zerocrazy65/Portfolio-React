@@ -44,7 +44,7 @@ export const progresses: progress[] = [
    },
    {
       header: "",
-      label: "Graduate with 3.18",
+      label: "Graduated with 3.18",
       year: "NOW",
       icon: "CircleIcon",
    },
