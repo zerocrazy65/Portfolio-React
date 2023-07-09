@@ -14,6 +14,7 @@ import challenge1 from "../assets/myProjects/challenge1.jpg";
 import challenge2 from "../assets/myProjects/challenge2.jpg";
 import challenge3 from "../assets/myProjects/challenge3.jpg";
 import challenge4 from "../assets/myProjects/challenge4.jpg";
+import challenge5 from "../assets/myProjects/challenge5.jpg";
 import p5work1 from "../assets/myProjects/p5work1.png";
 import p5work2 from "../assets/myProjects/p5work2.png";
 import processing from "../assets/myProjects/processing.png";
@@ -143,5 +144,15 @@ export const projects: project[] = [
       link: "https://zerocrazy-challenge-4.netlify.app",
       icon: frontendIcon,
       image: challenge4,
+   },
+   {
+      title: "Frontend Mentor",
+      stack: "CloneUI",
+      description:
+         "This is a challenge to create a web UI design similar to the one provided by Frontend Mentor",
+      difficulty: "Basic",
+      link: "https://zerocrazy-challenge-5.netlify.app",
+      icon: frontendIcon,
+      image: challenge5,
    },
 ];
